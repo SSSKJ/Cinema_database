@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>376</x>
+      <y>72</y>
+      <w>168</w>
+      <h>296</h>
+    </coordinates>
+    <panel_attributes>vip
+--
+-cardnum: String
+-firstname: String
+-lastname: String
+-phonenum: String
+-address: String
+-balance: Long
+-credits: Long
+--
++getcardnum(): String
++setcardnum(String): void
++getfirstname(): String
++setfirstname(String): void
++getlastname(): String
++setlastname(String): void
++getphonenum(): String
++setphonenum(String): void
++getaddress(): String
++setaddress(String): void
++getbalance(): Long
++setbalance(Long): void
++getcredits(): Long
++setcredits(Long): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>448</y>
+      <w>168</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>film
+--
+-filmcode: String
+-name: String
+-director: String
+-leadingrole: String
+-nationality: String
+-release_date: Date
+--
++getfilmcode(): String
++setfilmcode(String): void
++getname(): String
++setname(String): void
++getdirector(): String
++setdirector(String): void
++getleadingrole(): String
++setleadingrole(String): void
++getnationality(): String
++setnationality(String): void
++getrelease_date(): Date
++setrelease_date(Date): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>512</y>
+      <w>168</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>room
+--
+-roomnum: String
+-type: String
+-capacity: int
+--
++getroomnum(): String
++setroomnum(String): void
++gettype(): String
++settype(String): void
++getcapacity(): int
++setcapacity(int): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>648</y>
+      <w>56</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=[seatnum]-&gt;
+m2=1
+m1=*
+</panel_attributes>
+    <additional_attributes>30.0;80.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>720</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>seat
+--
+-occupied: boolean
+--
++getoccupied(): boolean
++setoccupied(boolean): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>448</y>
+      <w>168</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>ticket
+--
+-ticketnum: String
+-verificationcode: String
+-price: Long
+-date: Date
+-time: Time
+--
++getticketnum(): String
++setticketnum(String): void
++getverification(): String
++setverification(String): void
++getprice(): Long
++setprice(Long): void
++getdate(): Date
++setdate(Date): void
++gettime(): Time
++settime(Time): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>208</y>
+      <w>168</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>staff
+--
+-id: String
+-firstname: String
+-lastname: String
+-age: int
+-address: String
+--
++getid(): String
++setid(String): void
++getfirstname(): String
++setfirstname(String): void
++getlastname(): String
++setlastname(String): void
++getage(): int
++setage(int): void
++getaddress(): String
++setaddress(String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>64</y>
+      <w>168</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>order
+--
+-id: String
+-amount: Long
+-time: Time
+-date: Date
+--
++getid(): String
++setid(String): void
++getamount(): Long
++setamount(Long): void
++gettime(): Time
++settime(Time): void
++getdate(): Date
++setdate(Date): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>952</x>
+      <y>336</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>ticket_order
+--
+-ticket_amount: int
+--
++getticketamount(): int
++setticketamount(int): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1056</x>
+      <y>240</y>
+      <w>96</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;80.0;10.0;80.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1128</x>
+      <y>240</y>
+      <w>96</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+{total;disjoint}</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;100.0;80.0;100.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>336</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>snack_order
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>448</y>
+      <w>168</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>snack
+--
+-id: String
+-type: String
+-price: Long
+-available_amount: Long
+--
++getid(): String
++setid(String): void
++gettype(): String
++settype(String): void
++getprice(): Long
++setprice(Long): void
++getavailableamount(): Long
++setavailableamount(Long): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>352</y>
+      <w>40</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1...*
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1024</x>
+      <y>400</y>
+      <w>80</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-
+ticket_detail
+m1=1...*
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>832</x>
+      <y>552</y>
+      <w>136</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+watch
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>568</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>128</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>120</y>
+      <w>536</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+order_info
+m1=*
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;650.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>576</y>
+      <w>24</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>536</x>
+      <y>808</y>
+      <w>168</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>play_on
+--
+-date: Date
+-time: Time
+--
++getdate(): Date
++setdate(Date): void
++gettime(): Time
++settime(Time): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>392</y>
+      <w>136</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1344</x>
+      <y>360</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>snack_detail
+--
+-quantity
+--
++getquantity(): Long
++setquantity(Long): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>568</y>
+      <w>832</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>lt=-
+room_at
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0;10.0;470.0;1020.0;470.0;1020.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>664</y>
+      <w>568</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=-
+seat_on
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;330.0;690.0;330.0;690.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>80</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>16</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>order_detail
+--
+-type: String
+--
++gettype(): String
++settype(String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
